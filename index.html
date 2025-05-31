@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danesh Hosur</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js/loaders/GLTFLoader.js"></script>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <style>
+        /* Additional CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(#FF5733, #9933CC);
+            /* Gradient background */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            /* Text color */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Rest of your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-photo">
+            <!-- Add your round photo here -->
+            <img src="photo.avif" alt="My Photo">
+        </div>
+        <div class="header-title">
+            <div class="typing-container">
+                <div id="name" class="typing-text name-text"></div>
+                <div id="role" class="typing-text role-text"></div>
+            </div>
+        </div>
+        <div>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div id="scroll-progress-bar"></div>
+
+
+    <section id="profile" class="container">
+        <h2>Profile</h2>
+        <p>I am a skilled and passionate IT professional with a strong technical background. My experience includes
+            proficient knowledge in programming languages such as Python, Java, and JavaScript, along with hands-on
+            experience in web development and database management. I have successfully contributed to the development
+            and implementation of innovative software solutions, demonstrating a problem-solving attitude and a keen eye
+            for detail. With a track record of delivering high-quality projects, I am eager to leverage my technical
+            acumen to drive success for your esteemed IT company.</p>
+    </section>
+
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <h4>Bachelor of Engineering</h4>
+        <h5>Dr. Ambedkar Institute of Technology Banglore</h5>
+        <h5>2020-24</h5>
+        <h5>7.51 <small>(cgpa)</small></h5>
+
+        <h4>Class 12</h4>
+        <h5>Royal Palace PU College Jamakhandi</h5>
+        <h5>2018-20</h5>
+        <h5>82.33 %</h5>
+
+        <h4>Class 10</h4>
+        <h5>Govt. High School Jagadal</h5>
+        <h5>2018</h5>
+        <h5>69.12 %</h5>
+
+    </section>
+
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div id="portfolio-content">
+            <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
+                <h3>Alcohol Detection and Engine Locking System</h3>
+                <p>
+                    We developed an innovative Alcohol Detection and Engine Locking System, designed to enhance road
+                    safety. Utilizing advanced sensor technology, the system accurately detects alcohol levels of
+                    drivers. Upon detecting an intoxicated driver, it automatically immobilizes the vehicle's engine,
+                    preventing potential accidents and promoting responsible driving behavior.
+                </p>
+            </div>
+
+            <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
+                <h3>Electricity Bill Management System</h3>
+                <p>
+                    The Electricity Bill Management System was a software project aimed at streamlining and automating
+                    the billing process for utility companies. Implemented user-friendly interfaces for customers to
+                    view and pay their bills online, reducing manual effort and enhancing customer satisfaction.
+                    Integrated database management for efficient data storage and retrieval. Improved accuracy and
+                    timeliness of billing operations while optimizing resource utilization.
+                </p>
+            </div>
+
+            <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
+                <h3>Employee Database Management</h3>
+                <p>
+                    Developed a dynamic Employee Management Web Application using Java (Servlets), 
+                    JSP, MySQL, and deployed it on Apache Tomcat 10 with a modern, responsive frontend (HTML, CSS, JavaScript). 
+                    Implemented CRUD operations (Create, Read, Update, Delete) for employee records with interactive 
+                    UI features like form validation, popups, and dynamic table updates. 
+                    Designed a secure, scalable backend connected to a MySQL database, featuring role-based navigation 
+                    (admin dashboard), and followed MVC architecture for clean separation of concerns
+                </p>
+            </div>
+            <!-- Add more static project boxes as needed -->
+        </div>
+    </section>
+
+
+    <section id="certificate" class="container">
+        <h2>Certification</h2>
+        <h5><a href="Software Engineering.pdf">Software Engineering ( NPTEL )</a></h5>
+        <h5><a href="Danesh K Hosur Full Stack Course.pdf">Fullstack Web Development ( TAP Academy )</a></h5>
+        <h5><a href="Oasis Certificate.pdf">Web Development ( Oasis )</a></h5>
+    </section>
+
+
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <h5>Programming Languages: Java</h5>
+        <h5>Web Development: HTML, CSS, JavaScript, Angular (basic)</h5>
+        <h5>Database: MySQL</h5>
+        <h5>Tools & Technologies: VS Code, Eclipse</h5>
+        <h5>Concepts: OOP(Object Oriented Programming), DBMS (Database Management System)</h5>
+        
+
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <ul class="unorder">
+            <li class="box">
+                <a class="ab" rel='noopener' href="https://www.linkedin.com/in/danesh096"
+                    target="_blank"><ion-icon class="img" name="logo-linkedin"></ion-icon>LinkedIn</a>
+            </li>
+            <li class="box">
+                <a class="ab" rel='noopener' href="https://www.facebook.com/Danesh.H.096" target="_blank"><ion-icon
+                        class="img" name="logo-facebook"></ion-icon>Facebook</a>
+            </li>
+            <li class="box">
+                <a class="ab" rel='noopener' href="https://github.com/DaneshH096" target="_blank"><ion-icon class="img"
+                        name="logo-github"></ion-icon>Github</a>
+            </li>
+            <li class="box">
+                <a class="ab" href="https://contact.dkhosur.site"><ion-icon class="img" name="mail"></ion-icon>Email</a>
+            </li>
+            <li class="box"><a rel='noopener' class="ab" href="https://dkhosur.site" target="_blank"><ion-icon
+                        class="img" name="globe"></ion-icon>Website </a></li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
