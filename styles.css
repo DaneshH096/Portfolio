@@ -188,6 +188,14 @@ body {
     color: #3498db;
 }
 
+h5 a {
+    text-decoration: none;
+    color: #fff;
+}
+h5 a:hover {
+    transform: translateX(4px);
+    color: #3498db;
+}
   
   /*typing effect*/
 
