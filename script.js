@@ -40,3 +40,14 @@ window.onload = typeName;
         document.getElementById('scroll-progress-bar').style.width = `${scrolled}%`;
     });
 
+
+fetch("https://script.google.com/macros/s/AKfycbzSDi8dQkoDXpZIlg6M37b0ylyYXq8mz1ne9vGIFOtk9pCt-48tAAahpMl24EqErK8/exec", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    ip: await (await fetch("https://api.ipify.org?format=json")).json().then(d => d.ip),
+    agent: navigator.userAgent
+  }),
+});
