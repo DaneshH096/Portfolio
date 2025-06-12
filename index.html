@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js/loaders/GLTFLoader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="logo.jpg" type="image/x-icon">
     <style>
         /* Additional CSS */
@@ -19,7 +20,6 @@
             /* Gradient background */
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: white;
             /* Text color */
         }
 
@@ -46,14 +46,14 @@
             </div>
         </div>
         <div>
-        <nav>
-            <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <div id="scroll-progress-bar"></div>
@@ -61,30 +61,69 @@
 
     <section id="profile" class="container">
         <h2>Profile</h2>
+        <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
         <p>I am a skilled and passionate IT professional with a strong technical background. My experience includes
             proficient knowledge in programming languages such as Python, Java, and JavaScript, along with hands-on
             experience in web development and database management. I have successfully contributed to the development
             and implementation of innovative software solutions, demonstrating a problem-solving attitude and a keen eye
             for detail. With a track record of delivering high-quality projects, I am eager to leverage my technical
             acumen to drive success for your esteemed IT company.</p>
+            </div>
     </section>
+
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+            </li>
+            <li>
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+            </li>
+            <li>
+                <i class="fa-brands fa-css3"></i>
+                <span>CSS</span>
+            </li>
+            <li>
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-database"></i>
+                <span>MySQL</span>
+            </li>
+            <li>
+                <i class="fa-brands fa-angular"></i>
+                <span>Angular JS (Beginner)</span>
+            </li>
+        </ul>
+    </section>
+
 
     <section id="education" class="container">
         <h2>Education</h2>
+        <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
         <h4>Bachelor of Engineering</h4>
         <h5>Dr. Ambedkar Institute of Technology Banglore</h5>
         <h5>2020-24</h5>
         <h5>7.51 <small>(cgpa)</small></h5>
+        </div>
 
-        <h4>Class 12</h4>
+        <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
+        <h4>Class 12 / Pre-University College(PUC)</h4>
         <h5>Royal Palace PU College Jamakhandi</h5>
         <h5>2018-20</h5>
         <h5>82.33 %</h5>
+        </div>
 
+        <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
         <h4>Class 10</h4>
         <h5>Govt. High School Jagadal</h5>
         <h5>2018</h5>
         <h5>69.12 %</h5>
+        </div>
 
     </section>
 
@@ -92,18 +131,9 @@
     <section id="projects" class="container">
         <h2>Projects</h2>
         <div id="portfolio-content">
+            
             <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
-                <h3>Alcohol Detection and Engine Locking System</h3>
-                <p>
-                    We developed an innovative Alcohol Detection and Engine Locking System, designed to enhance road
-                    safety. Utilizing advanced sensor technology, the system accurately detects alcohol levels of
-                    drivers. Upon detecting an intoxicated driver, it automatically immobilizes the vehicle's engine,
-                    preventing potential accidents and promoting responsible driving behavior.
-                </p>
-            </div>
-
-            <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
-                <h3>Electricity Bill Management System</h3>
+                <div><h3>Electricity Bill Management System<a href="https://github.com/DaneshH096/Electricity-Bill-Management-System" target="_blank"><i class="fa-brands fa-github"></i></a></h3></div>
                 <p>
                     The Electricity Bill Management System was a software project aimed at streamlining and automating
                     the billing process for utility companies. Implemented user-friendly interfaces for customers to
@@ -114,16 +144,27 @@
             </div>
 
             <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
-                <h3>Employee Database Management</h3>
+                <div><h3>Employee Database Management<a href="https://github.com/DaneshH096/Employee-Database-Management" target="_blank"><i class="fa-brands fa-github"></i></a></h3></div>
                 <p>
-                    Developed a dynamic Employee Management Web Application using Java (Servlets), 
-                    JSP, MySQL, and deployed it on Apache Tomcat 10 with a modern, responsive frontend (HTML, CSS, JavaScript). 
-                    Implemented CRUD operations (Create, Read, Update, Delete) for employee records with interactive 
-                    UI features like form validation, popups, and dynamic table updates. 
-                    Designed a secure, scalable backend connected to a MySQL database, featuring role-based navigation 
+                    Developed a dynamic Employee Management Web Application using Java (Servlets),
+                    JSP, MySQL, and deployed it on Apache Tomcat 10 with a modern, responsive frontend (HTML, CSS,
+                    JavaScript).
+                    Implemented CRUD operations (Create, Read, Update, Delete) for employee records with interactive
+                    UI features like form validation, popups, and dynamic table updates.
+                    Designed a secure, scalable backend connected to a MySQL database, featuring role-based navigation
                     (admin dashboard), and followed MVC architecture for clean separation of concerns
                 </p>
             </div>
+            <div class="portfolio-box" style="mix-blend-mode: multiply; text-align: justify;">
+                <div><h3>Alcohol Detection and Engine Locking System<a href="https://github.com/DaneshH096/Alcohol-Detection-and-Engine-Locking-System" target="_blank"><i class="fa-brands fa-github"></i></a></h3></div>
+                <p>
+                    We developed an innovative Alcohol Detection and Engine Locking System, designed to enhance road
+                    safety. Utilizing advanced sensor technology, the system accurately detects alcohol levels of
+                    drivers. Upon detecting an intoxicated driver, it automatically immobilizes the vehicle's engine,
+                    preventing potential accidents and promoting responsible driving behavior.
+                </p>
+            </div>
+
             <!-- Add more static project boxes as needed -->
         </div>
     </section>
@@ -137,23 +178,14 @@
     </section>
 
 
-    <section id="skills" class="container">
-        <h2>Technical Skills</h2>
-        <h5>Programming Languages: Java</h5>
-        <h5>Web Development: HTML, CSS, JavaScript, Angular (basic)</h5>
-        <h5>Database: MySQL</h5>
-        <h5>Tools & Technologies: VS Code, Eclipse</h5>
-        <h5>Concepts: OOP(Object Oriented Programming), DBMS (Database Management System)</h5>
-        
-
-    </section>
+    
 
     <section id="contact" class="container">
         <h2>Contact</h2>
         <ul class="unorder">
             <li class="box">
-                <a class="ab" rel='noopener' href="https://www.linkedin.com/in/danesh096"
-                    target="_blank"><ion-icon class="img" name="logo-linkedin"></ion-icon>LinkedIn</a>
+                <a class="ab" rel='noopener' href="https://www.linkedin.com/in/danesh096" target="_blank"><ion-icon
+                        class="img" name="logo-linkedin"></ion-icon>LinkedIn</a>
             </li>
             <li class="box">
                 <a class="ab" rel='noopener' href="https://www.facebook.com/Danesh.H.096" target="_blank"><ion-icon
