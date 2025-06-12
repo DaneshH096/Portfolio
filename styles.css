@@ -211,6 +211,8 @@ h3, h4 {
 
 #certificate a:hover {
     color: #28e4bf;
+    transition: 1s;
+    transform: translateX(1px);
 }
 
 /* Contact section styles */
